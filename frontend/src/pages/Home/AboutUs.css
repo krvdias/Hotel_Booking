@@ -1,0 +1,101 @@
+.about-us-container {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.about-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.about-section, .mission-section {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about-section h2, .mission-section h2 {
+  color: #1976d2;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.about-section p, .mission-section p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 300px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .features-section {
+    grid-template-columns: 1fr;
+  }
+}

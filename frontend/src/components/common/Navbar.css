@@ -1,0 +1,77 @@
+/* src/components/Navbar/Navbar.css */
+.navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.login-btn, .register-btn, .logout-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.nav-links .nav-btn.register-btn {
+  background-color: white;
+  color: #064f98;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-links .nav-btn.register-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.login-btn:hover, .logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

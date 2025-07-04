@@ -1,0 +1,160 @@
+.booking-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.booking-list-header {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.booking-header h2 {
+  margin: 0 0 0.5rem 0;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hotel-address {
+  margin: 0 0 1rem 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.booking-details {
+  margin: 0.5rem 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin: -0.7rem 0;
+}
+
+.detail-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.booked-dates {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.booked-dates h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.dates-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.date-badge {
+  background: #f0f0f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.no-bookings {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.booking-list-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.loading-spinner {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 5px solid #1976d2;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+.booking-list-error {
+  text-align: center;
+  padding: 2rem;
+  color: #d32f2f;
+  background-color: #fde8e8;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.cancel-booking-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-booking-btn:hover {
+  background-color: #d32f2f;
+}
+
+.cancel-booking-btn:disabled {
+  background-color: #ffcdd2;
+  cursor: not-allowed;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .booking-list-container {
+    padding: 1rem;
+  }
+  
+  .bookings-grid {
+    grid-template-columns: 1fr;
+  }
+}

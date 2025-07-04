@@ -1,0 +1,151 @@
+.edit-user-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.edit-user-header h2 {
+  margin: 0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  color: #4a6baf;
+}
+
+.user-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4a6baf;
+  box-shadow: 0 0 0 2px rgba(74, 107, 175, 0.2);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.save-btn, .cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.save-btn {
+  background-color: #4a6baf;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #3a5a9f;
+}
+
+.save-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+  border: 1px solid #f5c6cb;
+}
+
+.success-message {
+  color: #28a745;
+  background-color: #d4edda;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+  border: 1px solid #c3e6cb;
+}
+
+@media (max-width: 768px) {
+  .edit-user-container {
+    padding: 15px;
+    margin: 15px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-actions {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  
+  .save-btn, .cancel-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
